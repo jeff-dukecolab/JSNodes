@@ -1,0 +1,56 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.7.2/darkly/bulmaswatch.min.css">
+</head>
+<nav class="level">
+  <div class="level-item level-left">
+    <h1 class="title is-1">Nodes</h1>
+  </div>
+</nav>
+<p class="subtitle is-4"></p>
+<div class="container is-fluid">
+  <div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <p class="title">What are they?</p>
+          <p class="subtitle">pieces of the DOM</p>
+          <div class="content">
+            <p>The DOM is the Document Object Model, which you can <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/1200px-DOM-model.svg.png">think of as a tree.</a></p>
+          <p>The website (document) is made up of small pieces, called nodes. Everything that has a tag is a node. This paragraph is a node.</p>
+          <p>We can create, modify and remove nodes with javascript without reloading the page!</p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">How do I use it?</p>
+          <p class="subtitle">Let's create nodes!</p>
+          <div class="content">
+            <button id="paragraphButton" class="button is-primary">paragraph</button><br />
+            <button onClick="createImage()"class="button is-primary">Image</button><br />
+            <button onClick="createButton()" class="button is-primary">Button</button><br />
+            <button onClick="createUl()" class="button is-primary">UL</button><br />
+            <button onClick="createLi()" class="button is-primary">LI</button>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Try it out!</p>
+        <p class="subtitle">Dynamic content goes here!</p>
+        
+        <!-- DYNAMIC CONTENT GOES HERE -->
+        <div id="dynamicContent" class="content">
+
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
